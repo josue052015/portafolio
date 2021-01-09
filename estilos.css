@@ -1,0 +1,25 @@
+*{
+    padding: 0%;
+}
+body {
+    background-image: url('astro_2.gif');
+    height:600px;
+   background-repeat: no-repeat;
+    background-position:center;
+   /* background-attachment: cover;*/
+  background-size: 100%;
+  background-attachment: fixed;
+  overflow:auto;
+} 
+h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 150px;
+    font-weight: 800;
+    color: transparent;
+    background-image: url(https://media.giphy.com/media/l46CBNZrlnQUH8oMg/giphy.gif);
+    background-position: center;
+    -webkit-background-clip: text;
+}
+
