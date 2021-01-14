@@ -1,15 +1,21 @@
 *{
     padding: 0%;
+    background-image: url('astro_2.gif');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 100%;
+  background-attachment: fixed;
 }
 body {
-    background-image: url('astro_2.gif');
-    height:600px;
+  /*  background-image: url('astro_2.gif');*/
+   /* height:600px;
    background-repeat: no-repeat;
-    background-position:center;
+    background-position:center;*/
    /* background-attachment: cover;*/
-  background-size: 100%;
-  background-attachment: fixed;
+ /* background-size: 100%;
+  background-attachment: fixed;*/
   overflow:auto;
+ 
 } 
 h1 {
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -18,8 +24,50 @@ h1 {
     font-size: 150px;
     font-weight: 800;
     color: transparent;
-    background-image: url(https://media.giphy.com/media/l46CBNZrlnQUH8oMg/giphy.gif);
+    background-image: url(https://media.giphy.com/media/2tTh7wB6DtL1QQvAF5/giphy.gif);
     background-position: center;
     -webkit-background-clip: text;
 }
+a {
+    position:absolute;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 450px;
+    color: #fff;
+    background: green;
+    border-radius: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
 
+/*https://media.giphy.com/media/10j4fJ3KSGQo1y/giphy.gif*/
+
+
+/*https://media.giphy.com/media/l46CBNZrlnQUH8oMg/giphy.gif*/
+/*https://media.giphy.com/media/MBfLHGvyyeQgH8UknX/giphy.gif*/
+span 
+{
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        width: 0;
+        height: 0;
+        opacity: 0.2;
+    }
+    100%
+    {
+        width: 500px;
+        height: 500px;
+        opacity: 0.2;
+    }
+}
