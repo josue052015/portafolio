@@ -17,11 +17,12 @@
 }
 body {
   
-  overflow:auto;
+  overflow:hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 100vh;
+ /* min-width: 100vh;*/
+ min-height: 60vh;
   flex-direction: column;
  
  
