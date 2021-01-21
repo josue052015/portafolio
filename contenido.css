@@ -13,7 +13,8 @@
 .bloque h1{
 	text-align: center;
 	margin: 0;
-	font-size: 75px;
+    font-size: 75px;
+    color:crimson;
 	line-height: 350px;
 }
 .bloque p{
@@ -28,13 +29,23 @@
 	background-attachment: fixed;
 }
 .parallax.image-1{
-	background-image: url("info.jpg");
+    background-image: url("info.jpg");
+    
 }
 .parallax.image-2{
 	background-image: url("estudios.jpg");
 }
 .parallax.image-3{
 	background-image: url("trabajos.jpg");
+}
+.parallax.image-4{
+    background-image: url("programacion.jpg");
+}
+.parallax.image-5{
+    background-image: url("basedatos.jpg");
+}
+.parallax.image-6{
+    background-image: url("versiones.jpg");
 }
 #scrollpath{
     position: fixed;
@@ -93,8 +104,18 @@
     writing-mode: vertical-rl;
     text-orientation:sideways ;
 }
-@keyframes mover{
-    0%{
-        transform: translate(100%);
-    }
+a 
+{
+padding: 60px 60px;
+
+margin: 10px 10px;
+
+align-items: center;
+ color: #fff;
+ background: #008000;
+ border-radius: 10px;
+ font-size: 15px;
+ text-decoration: none;
+ letter-spacing: 2px;
+ overflow: hidden;
 }

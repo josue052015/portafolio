@@ -1,8 +1,87 @@
 <!doctype html> 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="contenido.css">
 </head>
 <body>
-  
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <div id="percent"></div>
+    <section> 
+
+    <div class="bloque parallax image-4">
+		<div class="container">
+			<h1>Programación</h1>
+		</div>
+	</div>
+
+	<div class="bloque">
+		<div class="container">
+			<h2>Tecnologías</h2>
+			<p>
+                •	ASP.NET MVC5 (C#)
+            </p>
+            <p>
+                •	ASP.NET CORE (C#)
+            </p>
+            <p>
+                •	HTML,CSS,JAVASCRIPT (C#)
+            </p>
+            <p>
+                •	WINDOWS FORMS (C#)
+            </p>
+            
+		</div>
+    </div>
+    <div class="bloque parallax image-5">
+		<div class="container">
+			<h1 >Base de datos</h1>
+		</div>
+	</div>
+
+	<div class="bloque">
+		<div class="container">
+			<h2 class="animado">Gestores</h2>
+			<p>
+                • SQL Server
+            </p>
+            
+			<p>
+                • Access
+            </p>
+		</div>
+    </div>
+    <div class="bloque parallax image-6">
+		<div class="container">
+			<h1>Control de versiones</h1>
+		</div>
+	</div>
+
+	<div class="bloque">
+		<div class="container">
+			<h2>Pasante de informática</h2>
+			<p>
+                • Git
+            </p>
+            <p>
+                • Github
+            </p>
+		</div>
+    </div>
+</section>
+<script type="text/javascript">
+var percent= document.getElementById("progressbar");
+var percent= document.getElementById("percent");
+
+var totalheight= document.body.scrollHeight - window.innerHeight;
+window.onscroll = function(){
+    var progress = (window.pageYOffset/totalheight)*100;
+    progressbar.style.height = progress + "%";
+    percent.innerHTML = "Progreso: " + Math.round(progress)+ "%"
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+}
+</script>
+<script src="funciones.js"></script>
+</body>
 </body>
 </html>
