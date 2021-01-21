@@ -1,8 +1,77 @@
 <!doctype html> 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="contenido.css">
 </head>
 <body>
-  
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <div id="percent"></div>
+    <section> 
+
+    <div class="bloque parallax image-1">
+		<div class="container">
+			<h1 class="animado">Información esencial</h1>
+		</div>
+	</div>
+
+	<div class="bloque">
+		<div class="container">
+			<h2>Datos:</h2>
+			<p>
+                Nombre completo: Pedro Josue Rodriguez Inoa
+            </p>
+            <p>
+                Cédula:40234295893
+            </p>
+		</div>
+    </div>
+    <div class="bloque parallax image-2">
+		<div class="container">
+			<h1 class="animado">Estudios</h1>
+		</div>
+	</div>
+
+	<div class="bloque">
+		<div class="container">
+			<h2 class="animado">Estudios secundarios</h2>
+			<p>
+                Técnico Profesional en informática en el Instituto Politécnico Hainamosa 
+            </p>
+            <h2>Estudios universitarios</h2>
+			<p>
+                Ing. En sistemas computacionales en la Universidad Dominicana O&M
+            </p>
+		</div>
+    </div>
+    <div class="bloque parallax image-3">
+		<div class="container">
+			<h1 class="animado">Puestos ocupados</h1>
+		</div>
+	</div>
+
+	<div class="bloque">
+		<div class="container">
+			<h2>Pasante de informática</h2>
+			<p>
+                Centro Policlínico Nacional
+            </p>
+            
+		</div>
+    </div>
+</section>
+<script type="text/javascript">
+var percent= document.getElementById("progressbar");
+var percent= document.getElementById("percent");
+
+var totalheight= document.body.scrollHeight - window.innerHeight;
+window.onscroll = function(){
+    var progress = (window.pageYOffset/totalheight)*100;
+    progressbar.style.height = progress + "%";
+    percent.innerHTML = "Progreso: " + Math.round(progress)+ "%"
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+}
+</script>
+<script src="funciones.js"></script>
 </body>
 </html>

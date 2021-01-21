@@ -1,0 +1,100 @@
+.container{
+	max-width: 960px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+.bloque
+{
+    background: cadetblue;
+}
+.bloque h2{
+	margin-bottom: 40px;
+}
+.bloque h1{
+	text-align: center;
+	margin: 0;
+	font-size: 75px;
+	line-height: 350px;
+}
+.bloque p{
+	margin-bottom: 40px;
+	font-size: 16px;
+}
+.bloque.parallax{
+	height: 600px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.parallax.image-1{
+	background-image: url("info.jpg");
+}
+.parallax.image-2{
+	background-image: url("estudios.jpg");
+}
+.parallax.image-3{
+	background-image: url("trabajos.jpg");
+}
+#scrollpath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate 5s linear infinite;
+}
+#progressbar:before,
+#progressbar:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7); 
+    filter: blur(10px);
+}
+#progressbar:after
+{
+    filter: blur(30px);
+}
+@keyframes animate 
+{
+    0%,100%
+    {
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+::-webkit-scrollbar
+{
+    width: 1 ;
+}
+#percent{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%) rotateX(180deg) rotateY(180deg);
+    right: 15px;
+    color:black;
+    font-size: 2em;
+    writing-mode: vertical-rl;
+    text-orientation:sideways ;
+}
+@keyframes mover{
+    0%{
+        transform: translate(100%);
+    }
+}
