@@ -10,6 +10,7 @@
     <section> 
 
     <div class="bloque parallax image-4">
+        <a href="inicio.html">Volver al inicio</a>
 		<div class="container">
 			<h1>Programación</h1>
 		</div>
@@ -73,13 +74,17 @@
 var percent= document.getElementById("progressbar");
 var percent= document.getElementById("percent");
 
+
 var totalheight= document.body.scrollHeight - window.innerHeight;
 window.onscroll = function(){
     var progress = (window.pageYOffset/totalheight)*100;
     progressbar.style.height = progress + "%";
     percent.innerHTML = "Progreso: " + Math.round(progress)+ "%"
+/*
     let totalHeight = document.body.scrollHeight - window.innerHeight;
+    */
 }
+
 </script>
 <script src="funciones.js"></script>
 </body>

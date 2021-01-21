@@ -1,3 +1,4 @@
+
 .container{
 	max-width: 960px;
     margin: 0 auto;
@@ -106,10 +107,11 @@
 }
 a 
 {
-padding: 60px 60px;
+    /*
+padding: 10px 10px;
 
 margin: 10px 10px;
-
+*/
 align-items: center;
  color: #fff;
  background: #008000;
@@ -118,4 +120,8 @@ align-items: center;
  text-decoration: none;
  letter-spacing: 2px;
  overflow: hidden;
+}
+
+section{
+    overflow: hidden;
 }

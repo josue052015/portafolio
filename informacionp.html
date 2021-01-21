@@ -4,13 +4,14 @@
     <link rel="stylesheet" href="contenido.css">
 </head>
 <body>
-    <a href="inicio.html">Volver al inicio</a>
+   
     <div id="progressbar"></div>
     <div id="scrollpath"></div>
     <div id="percent"></div>
     <section> 
 
     <div class="bloque parallax image-1">
+        <a href="inicio.html">Volver al inicio</a>
 		<div class="container">
 			<h1>Información esencial</h1>
 		</div>
@@ -70,7 +71,7 @@ window.onscroll = function(){
     var progress = (window.pageYOffset/totalheight)*100;
     progressbar.style.height = progress + "%";
     percent.innerHTML = "Progreso: " + Math.round(progress)+ "%"
-    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    
 }
 </script>
 
