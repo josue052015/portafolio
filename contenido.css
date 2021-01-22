@@ -6,10 +6,18 @@
 }
 .bloque
 {
-    background: cadetblue;
+   /* background: cadetblue;*/
 }
 .bloque h2{
-	margin-bottom: 40px;
+    margin-bottom: 40px;
+ color:#008aff;
+}
+.bloque h3{
+    text-align: center;
+	margin: 0;
+    font-size: 75px;
+    color:black;
+	line-height: 350px;
 }
 .bloque h1{
 	text-align: center;
@@ -109,9 +117,11 @@
     writing-mode: vertical-rl;
     text-orientation:sideways ;
 }
+
 a 
 {
     align-items: center;
+    /*
     color: #fff;
     font-family: 'Poppins', sans-serif;
     background: #008000;
@@ -119,9 +129,32 @@ a
     font-size: 25px;
     text-decoration: none;
     letter-spacing: 2px;
+    */
     overflow: hidden;
 }
 
 section{
     overflow: hidden;
+}
+
+@media screen and (max-width: 1300px){
+    .bloque h3{
+        text-align: center;
+        margin: 0;
+        font-size: 55px;
+        color:black;
+        line-height: 280px;
+    }
+    .bloque h1{
+        text-align: center;
+        margin: 0;
+        font-size: 55px;
+        color:crimson;
+        line-height: 280px;
+    }
+}
+
+.imagen{
+    height: 50px;
+    width: 50px;
 }

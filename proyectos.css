@@ -119,3 +119,9 @@ align-items: center;
  letter-spacing: 2px;
  overflow: hidden;
 }
+.imagen{
+    margin-bottom: 550px;
+  
+    height: 50px;
+    width: 50px;
+}
